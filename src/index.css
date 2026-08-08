@@ -1,0 +1,82 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1e293b;
+  background: #eef5ff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  #root {
+    padding: 15px;
+  }
+
+  .app-container {
+    width: 100%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100% !important;
+    max-width: 380px;
+  }
+
+  form button {
+    margin-left: 0;
+  }
+
+  .forecast-card {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
